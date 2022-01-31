@@ -25,7 +25,22 @@ public class Main {
 		System.out.println(curso2);
 		System.out.println(mentoria);
 		
+		Bootcamp bootcamp = new Bootcamp();
+		bootcamp.setNome("Bootcamp Java Developer");
+		bootcamp.setDescricao("Descrição do Bootcamp");
+		bootcamp.getConteudos().add(curso1);
+		bootcamp.getConteudos().add(curso2);
+		bootcamp.getConteudos().add(mentoria);
 		
-	}
+		Dev novoDev = new Dev();
+		novoDev.setNome("João das Neves");
+		novoDev.inscreverBootcamp(bootcamp);
+		System.out.println("Conteúdos inscritos João: " + novoDev.getConteudosInscritos());
+		
+		Dev novoDev2 = new Dev();
+		novoDev2.setNome("Rosa Rosalinda");
+		novoDev.inscreverBootcamp(bootcamp);
+		System.out.println("Conteúdos inscritos Rosa: " + novoDev2.getConteudosInscritos());
+ 	}
 
 }
