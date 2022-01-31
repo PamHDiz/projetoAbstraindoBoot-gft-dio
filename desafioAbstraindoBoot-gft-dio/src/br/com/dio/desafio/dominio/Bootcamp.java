@@ -13,6 +13,8 @@ public class Bootcamp {
 	private final LocalDate dataFinal = dataInicial.plusDays(45); // adiciona 45 dias a data inicial
 	private Set<Dev> devsInscritos = new HashSet<Dev>();
 	private Set<Conteudo> conteudos = new LinkedHashSet<Conteudo>();
+	
+	
 	public String getNome() {
 		return nome;
 	}
